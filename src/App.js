@@ -34,14 +34,9 @@ class App extends Component {
 
             i===current?
             <div className='row fill'> 
-                {[...Array(6)].map((e, i)=>
+                {[...Array(7)].map((e, i)=>
                 <div 
                 className={ blocks.includes(i)?'block cell': 'cell' }
-                ></div>)}
-                {[...Array(1)].map((e, i)=>
-                <div 
-                className={ blocks.includes(i)?'block cell': 'cell'}
-                onClick={()=>this.toggleBlock(i)}
                 ></div>)}
            </div>
            :
@@ -51,6 +46,9 @@ class App extends Component {
 
             )
           })
+        }
+        {
+          [8, 9, 10]
         }
       </div>
      );
